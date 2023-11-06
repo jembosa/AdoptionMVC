@@ -1,8 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<style>
+    body {
+        background-image: url('https://assets1.risnews.com/styles/image_gallery_item_small/s3/2022-03/petco.checkout.3r3a3971.jpg?itok=StUg_O6R');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 style ="color: white;">Welcome to the Adoption Center!</h1>
+    <a asp-action="Index" asp-controller="Animals"><h2 style="color: white;">View our pets!</h2></a>
 </div>
+

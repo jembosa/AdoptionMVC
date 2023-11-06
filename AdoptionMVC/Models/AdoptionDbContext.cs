@@ -25,13 +25,13 @@ public partial class AdoptionDbContext : DbContext
     {
         modelBuilder.Entity<Animal>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Animals__3213E83F7B0093B5");
+            entity.HasKey(e => e.Id).HasName("PK__Animals__3213E83F8722E65F");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Breed).HasMaxLength(30);
             entity.Property(e => e.Description).HasMaxLength(30);
             entity.Property(e => e.Img)
-                .HasMaxLength(50)
+                .HasMaxLength(4000)
                 .HasColumnName("img");
             entity.Property(e => e.Name).HasMaxLength(20);
         });
